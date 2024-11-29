@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-black text-white">
+    <header id="#home" class="flex justify-between md:items-center pt-5 h-16 relative overflow-hidden">
+        <h1 class="text-4xl px-10 font-semibold "><span class="text-red-600 font-bold">M</span>ohit.</h1>
+        <nav class="transition-all">
+            <ul
+                class="flex flex-col md:flex-row gap-5 md:gap-10 px-10 absolute left-[100%] top-5 md:h-10 md:static transition-all">
+                <li class="text-lg font-medium hover:text-red-500 cursor-pointer"><a href="#home">Home</a></li>
+                <li class="text-lg font-medium hover:text-red-500 cursor-pointer"><a href="#about">About</a></li>
+                <li class="text-lg font-medium hover:text-red-500 cursor-pointer"><a href="#services">Service</a></li>
+                <li class="text-lg font-medium hover:text-red-500 cursor-pointer"><a href="#portfolio">Portfolio</a>
+                </li>
+                <li class="text-lg font-medium hover:text-red-500 cursor-pointer"><a href="#contact">contact</a></li>
+            </ul>
+        </nav>
+        <i class="fa-regular fa-circle-xmark md:hidden hidden absolute right-4 text-3xl"></i>
+        <i class="fa-solid fa-bars mr-5 block md:hidden text-2xl"></i>
+    </header>
+    <main>
+        <div class="h-screen w-full">
+            <div class="h-[80%] w-[60%] mx-auto flex flex-col md:flex-row justify-center  items-center gap-10">
+                <div class="intro flex flex-col justify-center gap-5 md:mt-1 mt-16">
+                    <h5 class="md:text-2xl text-xl"><span class="text-red-600">Frontend</span> Web Developer</h5>
+                    <div>
+                        <h1 class="md:text-6xl text-4xl font-semibold">Hi, I'm <span
+                                class="text-red-600 font-bold">MOHIT</span></h1>
+                        <h1 class="md:text-6xl text-4xl font-semibold">From Agra, UP</h1>
+                    </div>
+                </div>
+                <div class="flex items-center">
+                    <div class="md:w-80 md:h-80 w-60 h-60 rounded-full overflow-hidden bg-zinc-400">
+                        <img class="w-full md:-translate-y-[200px] -translate-y-[150px]" src="images/2.jpeg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="w-full pt-24" id="about">
+            <div class="h-[80%] w-[80%] mx-auto flex flex-col md:flex-row gap-10">
+                <div class="flex items-center">
+                    <div class="w-80 h-[450px] rounded-xl overflow-hidden bg-zinc-400">
+                        <img class="w-full -translate-y-[10px]" src="images/1.jpeg" alt="">
+                    </div>
+                </div>
+                <div class="intro flex flex-col gap-5">
+                    <h5 class="text-4xl font-semibold">About Me</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, quasi doloremque amet nisi,
+                        ullam labore quas praesentium facilis ad nostrum ducimus nesciunt necessitatibus reiciendis nam
+                        nemo non ratione repellat sequi recusandae alias assumenda omnis. Et quidem labore dolor
+                        possimus minus, praesentium laboriosam libero dolorem, atque fuga, deleniti suscipit nulla
+                        recusandae.</p>
+                    <div>
+                        <ul class="flex gap-10">
+                            <li
+                                class="skills cursor-pointer underline decoration-red-600 active:text-red-700 hover:text-red-500">
+                                Skills</li>
+                            <li
+                                class="experience cursor-pointer underline decoration-red-600 active:text-red-700 hover:text-red-500">
+                                Experience</li>
+                            <li
+                                class="education cursor-pointer underline decoration-red-600 active:text-red-700 hover:text-red-500">
+                                Education</li>
+                        </ul>
+                        <div class="flex flex-col gap-3 mt-5 text-sm content">
+                            <div>
+                                <h1 class="text-red-700">work</h1>
+                                <p class="text-base">UI Designer / Responsive</p>
+                            </div>
+                            <div>
+                                <h1 class="text-red-700">CSS- Frameworks/Libraries</h1>
+                                <p class="text-base">Tailwind, Bootstrap</p>
+                            </div>
+                            <div>
+                                <h1 class="text-red-700">JS- Frameworks/Libraries</h1>
+                                <p class="text-base">React, Redux</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="services" class="w-[90%] mx-auto my-10 ">
+            <h1 class="text-6xl font-semibold py-10">Services</h1>
+            <div class="flex flex-col md:flex-row justify-between gap-10">
+                <div
+                    class="bg-zinc-900 rounded-lg flex flex-col gap-3 p-5 transition hover:bg-red-700 hover:-translate-y-2">
+                    <i class="fa-solid fa-code text-4xl"></i>
+                    <h1 class="text-2xl font-semibold">Web Design</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt saepe magnam voluptates
+                        doloribus, expedita esse?</p>
+                    <button
+                        class="cursor-pointer w-28 py-2 rounded border font-medium text-sm border-white hover:bg-red-500 hover:font-normal hover:border-none">Learn
+                        more</button>
+                </div>
+                <div
+                    class="bg-zinc-900 rounded-lg flex flex-col gap-3 p-5 transition hover:bg-red-700 hover:-translate-y-2">
+
+                    <i class="fa-solid fa-layer-group text-4xl"></i>
+                    <h1 class="text-2xl font-semibold">UI Design</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt saepe magnam voluptates
+                        doloribus, expedita esse?</p>
+                    <button
+                        class="cursor-pointer w-28 py-2 rounded border font-medium text-sm border-white hover:bg-red-500 hover:font-normal hover:border-none">Learn
+                        more</button>
+                </div>
+                <div
+                    class="bg-zinc-900 rounded-lg flex flex-col gap-3 p-5 transition hover:bg-red-700 hover:-translate-y-2">
+                    <i class="fa-brands fa-app-store text-4xl"></i>
+                    <h1 class="text-2xl font-semibold">App Design</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt saepe magnam voluptates
+                        doloribus, expedita esse?</p>
+                    <button
+                        class="cursor-pointer w-28 py-2 rounded border font-medium text-sm border-white hover:bg-red-500 hover:font-normal hover:border-none">Learn
+                        more</button>
+                </div>
+
+            </div>
+        </div>
+        <div id="portfolio" class="w-[90%] mx-auto my-10">
+            <h1 class="text-6xl font-semibold py-10">My Work</h1>
+            <div class="flex flex-col md:flex-row justify-between gap-10">
+                <div class="bg-zinc-900 rounded-lg transition hover:bg-red-700 hover:-translate-y-2">
+                    <img class="w-full"
+                        src="https://plus.unsplash.com/premium_photo-1684785617500-fb22234eeedd?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="">
+                    <div class="p-5 flex flex-col gap-3">
+                        <h1 class="text-2xl font-semibold">MS Store</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt saepe magnam voluptates
+                            doloribus, expedita esse?</p>
+                        <button
+                            class="cursor-pointer w-28 py-2 rounded border font-medium text-sm border-white hover:bg-red-500 hover:font-normal hover:border-none">Visit</button>
+                    </div>
+                </div>
+                <div
+                    class="bg-zinc-900 rounded-lg flex flex-col gap-3 transition hover:bg-red-700 hover:-translate-y-2">
+                    <img class="w-full"
+                        src="https://images.unsplash.com/photo-1517504544462-e6b28c1abb8e?q=80&w=1631&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="">
+                    <div class="p-5 flex flex-col gap-3">
+                        <h1 class="text-2xl font-semibold">MS Weddings</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt saepe magnam voluptates
+                            doloribus, expedita esse?</p>
+                        <button
+                            class="cursor-pointer w-28 py-2 rounded border font-medium text-sm border-white hover:bg-red-500 hover:font-normal hover:border-none">visit</button>
+                    </div>
+                </div>
+                <div
+                    class="bg-zinc-900 rounded-lg flex flex-col gap-3 transition hover:bg-red-700 hover:-translate-y-2">
+                    <img class="w-full h-"
+                        src="https://images.unsplash.com/photo-1493863641943-9b68992a8d07?q=80&w=1458&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="">
+                    <div class="p-5 flex flex-col gap-3">
+                        <h1 class="text-2xl font-semibold">MS Studio</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt saepe magnam voluptates
+                            doloribus, expedita esse?</p>
+                        <button
+                            class="cursor-pointer w-28 py-2 rounded border font-medium text-sm border-white hover:bg-red-500 hover:font-normal hover:border-none">Visit</button>
+                    </div>
+                </div>
+            </div>
+            <div class="w-full flex justify-center py-5">
+                <button class="border-red-800 hover:bg-red-800 px-5 py-2 border my-5">See more</button>
+            </div>
+        </div>
+        <div id="contact" class="w-[90%] mx-auto my-10">
+            <div class="flex flex-col md:flex-row w-full h-80 gap-5">
+                <div class="md:w-[40%] px-10 flex flex-col gap-10">
+                    <h1 class="text-6xl font-semibold">Contact</h1>
+                    <div class="flex flex-col gap-5">
+                        <div class="flex items-center gap-5">
+                            <i class="fa-solid fa-envelope text-red-700 text-xl"></i>
+                            <span>mohitbaghel688@gmail.com</span>
+                        </div>
+                        <div class="flex items-center gap-5">
+                            <i class="fa-solid fa-square-phone text-red-700 text-xl"></i>
+                            <span>9897823268</span>
+                        </div>
+                        <div class="flex gap-5 h-5">
+                            <a href="#" class="w-8"><i class="text-2xl fa-brands fa-facebook hover:text-3xl"></i></a>
+                            <a href="#" class="w-8"><i class="text-2xl fa-brands fa-twitter hover:text-3xl"></i></a>
+                            <a href="#" class="w-8"><i class="text-2xl fa-brands fa-linkedin hover:text-3xl"></i></a>
+                            <a href="#" class="w-8"><i
+                                    class="text-2xl fa-brands fa-square-instagram hover:text-3xl"></i></a>
+                        </div>
+                    </div>
+                    <div>
+                        <button class="bg-red-600 px-5 rounded py-2 text-sm hover:bg-red-700">Download CV</button>
+                    </div>
+                </div>
+                <div class="md:w-[60%]">
+                    <form action="#" class="flex flex-col gap-5">
+                        <input class="px-3 py-2 rounded bg-zinc-900" type="text" placeholder="Your Name">
+                        <input class="px-3 py-2 rounded bg-zinc-900" type="text" placeholder="Your Name">
+                        <textarea class="px-3 py-2 rounded bg-zinc-900" rows="5" placeholder="Your Message"></textarea>
+                        <div class="flex justify-center">
+                            <button class="bg-red-600 px-20 rounded py-2 text-sm hover:bg-red-700 mb-10">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+    integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="script.js"></script>
+
+</html>
